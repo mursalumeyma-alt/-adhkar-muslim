@@ -1,0 +1,274 @@
+.prayer-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.prayer-page__header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.prayer-page__icon {
+  font-size: 2.4rem;
+}
+
+.prayer-page__header h1 {
+  font-size: 1.9rem;
+}
+
+.prayer-page__desc {
+  color: var(--color-ink-faint);
+  font-size: 0.92rem;
+  max-width: 400px;
+}
+
+.prayer-page__qibla-link {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+}
+
+/* -------- schedule -------- */
+
+.prayer-schedule {
+  margin-top: 24px;
+}
+
+.prayer-schedule__next {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  background: var(--gradient-hero);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.prayer-schedule__next-label {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.prayer-schedule__next-countdown {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.prayer-schedule__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.prayer-schedule__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+}
+
+.prayer-schedule__row--current {
+  border-color: var(--color-gold);
+  background: var(--color-gold-tint);
+}
+
+.prayer-schedule__row--next {
+  border-color: var(--color-emerald);
+}
+
+.prayer-schedule__row-icon {
+  font-size: 1.2rem;
+}
+
+.prayer-schedule__row-name {
+  flex: 1;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+
+.prayer-schedule__row-time {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-ink-soft);
+  font-size: 0.95rem;
+}
+
+.prayer-schedule__tz {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.74rem;
+  color: var(--color-ink-faint);
+  font-style: italic;
+}
+
+.prayer-schedule__settings {
+  margin-top: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  background: var(--color-surface);
+}
+
+.prayer-schedule__settings summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--color-ink-soft);
+  padding: 4px 0;
+}
+
+.prayer-schedule__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--color-ink-faint);
+}
+
+.prayer-schedule__field select {
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-size: 0.85rem;
+}
+
+.prayer-schedule__note {
+  margin-top: 14px;
+  font-size: 0.76rem;
+  color: var(--color-ink-faint);
+  line-height: 1.5;
+}
+
+/* -------- adhan section -------- */
+
+.adhan-section {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.adhan-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+}
+
+.adhan-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.adhan-card__header h2,
+.adhan-card--response h3 {
+  font-family: var(--font-arabic);
+  font-size: 1.3rem;
+  color: var(--color-gold-deep);
+}
+
+.adhan-card--response h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.adhan-card__listen-btn {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-emerald);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-base);
+}
+
+.adhan-card__listen-btn:hover {
+  border-color: var(--color-emerald);
+  background: var(--color-emerald-soft);
+}
+
+.adhan-card__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.adhan-card__line {
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.adhan-card__line:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.adhan-card__arabic {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.adhan-card__repeat {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+}
+
+.adhan-card__translit {
+  font-size: 0.8rem;
+  color: var(--color-ink-faint);
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.adhan-card__translation {
+  font-size: 0.88rem;
+  color: var(--color-ink-soft);
+}
+
+.adhan-card__badge {
+  margin-left: 8px;
+  font-size: 0.68rem;
+  background: var(--color-gold-tint);
+  color: var(--color-gold-deep);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.adhan-card__reference {
+  margin-top: 14px;
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.adhan-section__toggle {
+  align-self: center;
+  border: none;
+  background: none;
+  color: var(--color-gold-deep);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  padding: 6px;
+}

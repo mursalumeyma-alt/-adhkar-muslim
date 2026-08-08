@@ -1,0 +1,117 @@
+.voice-picker {
+  position: relative;
+}
+
+.voice-picker__trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-ink-soft);
+  font-size: 0.74rem;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  max-width: 160px;
+  transition: all var(--transition-base);
+}
+
+.voice-picker__trigger:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold-deep);
+}
+
+.voice-picker__trigger--warn {
+  border-color: color-mix(in srgb, #B3452F 40%, var(--color-border));
+  color: #B3452F;
+}
+
+.voice-picker__trigger--warn:hover {
+  border-color: #B3452F;
+  color: #B3452F;
+}
+
+.voice-picker__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+}
+
+.voice-picker__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 240px;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 32px var(--color-shadow);
+  padding: 6px;
+  list-style: none;
+  margin: 0;
+  z-index: 50;
+}
+
+.voice-picker__hint {
+  padding: 6px 10px 8px;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.voice-picker__option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: none;
+  background: none;
+  color: var(--color-ink);
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  text-align: left;
+}
+
+.voice-picker__option:hover {
+  background: var(--color-gold-tint);
+}
+
+.voice-picker__option--active {
+  background: var(--color-emerald-soft);
+  color: var(--color-emerald);
+  font-weight: 600;
+}
+
+.voice-picker__meta {
+  font-size: 0.7rem;
+  color: var(--color-ink-faint);
+  flex-shrink: 0;
+}
+
+.voice-picker__menu--note {
+  min-width: 260px;
+  max-width: 300px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voice-picker__menu--note p {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .voice-picker__trigger {
+    max-width: 120px;
+  }
+}

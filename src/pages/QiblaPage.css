@@ -1,0 +1,158 @@
+.qibla-page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.qibla-page__header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.qibla-page__icon {
+  font-size: 2.4rem;
+}
+
+.qibla-page__header h1 {
+  font-size: 1.9rem;
+}
+
+.qibla-page__desc {
+  color: var(--color-ink-faint);
+  font-size: 0.92rem;
+  max-width: 380px;
+}
+
+.qibla-compass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 10px;
+}
+
+.qibla-compass__dial-wrap {
+  position: relative;
+  width: min(78vw, 300px);
+  height: min(78vw, 300px);
+}
+
+.qibla-compass__dial {
+  width: 100%;
+  height: 100%;
+  transition: transform 120ms linear;
+  filter: drop-shadow(0 10px 30px var(--color-shadow));
+}
+
+.qibla-compass__ring {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 2;
+}
+
+.qibla-compass__tick {
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+}
+
+.qibla-compass__tick-major {
+  stroke: var(--color-gold);
+  stroke-width: 2.5;
+}
+
+.qibla-compass__cardinal {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  fill: var(--color-ink);
+}
+
+.qibla-compass__needle {
+  stroke: var(--color-emerald);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.qibla-compass__kaaba-icon {
+  font-size: 26px;
+}
+
+.qibla-compass__hub {
+  fill: var(--color-gold);
+}
+
+.qibla-compass__pointer {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-gold-deep);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.qibla-compass__stats {
+  display: flex;
+  gap: 28px;
+}
+
+.qibla-compass__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.qibla-compass__stat-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gold-deep);
+}
+
+.qibla-compass__stat-label {
+  font-size: 0.72rem;
+  color: var(--color-ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.qibla-compass__hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-ink-faint);
+  max-width: 360px;
+  line-height: 1.5;
+}
+
+.qibla-compass__hint--live {
+  color: var(--color-emerald);
+  font-weight: 600;
+}
+
+.qibla-compass__declination {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--color-ink-faint);
+  margin-top: -10px;
+}
+
+.qibla-compass__enable-btn {
+  border: none;
+  background: var(--color-emerald);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.qibla-compass__enable-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px var(--color-shadow);
+}

@@ -1,0 +1,164 @@
+.dhikr-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 2px 14px var(--color-shadow);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.dhikr-card:hover {
+  border-color: var(--color-gold);
+}
+
+.dhikr-card--done {
+  border-color: var(--color-emerald);
+  background: color-mix(in srgb, var(--color-emerald-soft) 55%, var(--color-surface));
+}
+
+.dhikr-card__index {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  opacity: 0.55;
+  font-weight: 600;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.dhikr-card__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dhikr-card__arabic {
+  font-size: 1.55rem;
+  color: var(--color-ink);
+}
+
+.dhikr-card__translation {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+}
+
+.dhikr-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  border-top: 1px dashed var(--color-border);
+}
+
+.dhikr-card__reference {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  color: var(--color-ink-faint);
+  font-style: italic;
+}
+
+.dhikr-card__track-indicator {
+  color: var(--color-gold-deep);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dhikr-card__tools {
+  display: flex;
+  gap: 8px;
+}
+
+.dhikr-card__tool-btn {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-ink-faint);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.dhikr-card__tool-btn:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold-deep);
+}
+
+.dhikr-card__tool-btn--active {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  background: var(--color-gold-tint);
+}
+
+.dhikr-card__tool-btn--error {
+  color: #B3452F;
+  border-color: #B3452F;
+}
+
+.dhikr-card__spinner {
+  animation: spinSlow 0.9s linear infinite;
+}
+
+.dhikr-card__audio-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: color-mix(in srgb, #B3452F 8%, var(--color-surface));
+  border: 1px solid color-mix(in srgb, #B3452F 30%, var(--color-border));
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  color: var(--color-ink-soft);
+}
+
+.dhikr-card__audio-notice-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.dhikr-card__audio-notice-actions button {
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  color: var(--color-ink-soft);
+  font-size: 0.74rem;
+  padding: 5px 10px;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: all var(--transition-base);
+}
+
+.dhikr-card__audio-notice-actions button:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold-deep);
+}
+
+@media (max-width: 640px) {
+  .dhikr-card {
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+  }
+  .dhikr-card__index {
+    display: none;
+  }
+  .dhikr-card .counter {
+    align-self: center;
+    flex-direction: row;
+    gap: 14px;
+  }
+}

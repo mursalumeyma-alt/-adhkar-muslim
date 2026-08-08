@@ -1,0 +1,22 @@
+.app-footer {
+  max-width: 700px;
+  margin: 60px auto 30px;
+  padding: 0 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.app-footer p:not(.app-footer__note) {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: 1.15rem;
+  color: var(--color-gold-deep);
+}
+
+.app-footer__note {
+  font-size: 0.75rem;
+  color: var(--color-ink-faint);
+  line-height: 1.5;
+}
