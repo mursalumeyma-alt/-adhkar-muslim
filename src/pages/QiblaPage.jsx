@@ -31,6 +31,8 @@ function QiblaCompass({ coords }) {
   const { heading, status, requestPermission } = useDeviceOrientation();
   const coordinates = new Coordinates(coords.latitude, coords.longitude);
   const qiblaBearing = Qibla(coordinates);
+  console.log("📍 Coordinates:", coords);
+console.log("🕋 Qibla bearing:", qiblaBearing);
   const distanceKm = distanceToKaabaKm(coords);
 
   // Phone compass sensors report heading relative to MAGNETIC north,

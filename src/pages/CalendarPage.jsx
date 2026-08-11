@@ -21,14 +21,20 @@ export default function CalendarPage() {
   // Hijri months spanned by the visible Gregorian month (usually one,
   // sometimes two near a Hijri month boundary).
   const hijriSpan = useMemo(() => {
-    const first = toHijri(new Date(viewYear, viewMonth, 1));
-    const last = toHijri(new Date(viewYear, viewMonth + 1, 0));
-    if (first.month === last.month && first.year === last.year) {
-      return `${first.monthName} ${first.year} AH`;
-    }
-    return `${first.monthName}–${last.monthName} ${last.year} AH`;
-  }, [viewYear, viewMonth]);
+  const first = toHijri(new Date(viewYear, viewMonth, 1));
+  const last = toHijri(new Date(viewYear, viewMonth + 1, 0));
 
+  const firstMonth = first.monthName || "";
+  const lastMonth = last.monthName || "";
+  const firstYear = first.year || "";
+  const lastYear = last.year || "";
+
+  if (first.month === last.month && first.year === last.year) {
+    return `${firstMonth} ${firstYear} AH`;
+  }
+
+  return `${firstMonth}–${lastMonth} ${lastYear} AH`;
+}, [viewYear, viewMonth]);
   const eventsThisMonth = useMemo(() => {
     const found = [];
     gridDays.forEach((d) => {

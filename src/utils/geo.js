@@ -1,18 +1,31 @@
-// Kaaba coordinates (Masjid al-Haram, Mecca).
-export const KAABA = { latitude: 21.4225, longitude: 39.8262 };
+const KAABA_LAT = 21.4225;
+const KAABA_LNG = 39.8262;
 
-const toRad = (deg) => (deg * Math.PI) / 180;
+export function distanceToKaabaKm(latitude, longitude) {
+  if (
+    typeof latitude !== "number" ||
+    typeof longitude !== "number"
+  ) {
+    return null;
+  }
 
-// Great-circle distance in kilometers (haversine formula).
-export function distanceToKaabaKm(coords) {
-  const R = 6371; // Earth's mean radius in km
-  const dLat = toRad(KAABA.latitude - coords.latitude);
-  const dLon = toRad(KAABA.longitude - coords.longitude);
-  const lat1 = toRad(coords.latitude);
-  const lat2 = toRad(KAABA.latitude);
+  const toRadians = (degrees) => (degrees * Math.PI) / 180;
+
+  const earthRadiusKm = 6371;
+
+  const lat1 = toRadians(latitude);
+  const lat2 = toRadians(KAABA_LAT);
+
+  const deltaLat = toRadians(KAABA_LAT - latitude);
+  const deltaLng = toRadians(KAABA_LNG - longitude);
 
   const a =
-    Math.sin(dLat / 2) ** 2 + Math.sin(dLon / 2) ** 2 * Math.cos(lat1) * Math.cos(lat2);
+    Math.sin(deltaLat / 2) ** 2 +
+    Math.cos(lat1) *
+      Math.cos(lat2) *
+      Math.sin(deltaLng / 2) ** 2;
+
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
+
+  return earthRadiusKm * c;
 }

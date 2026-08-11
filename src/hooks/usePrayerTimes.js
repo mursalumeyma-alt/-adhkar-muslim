@@ -9,6 +9,8 @@ import {
 import tzlookup from "tz-lookup";
 import { useLocalStorage } from "./useLocalStorage";
 
+
+  // ...
 const METHODS = {
   MuslimWorldLeague: { label: "Muslim World League", fn: CalculationMethod.MuslimWorldLeague },
   Egyptian: { label: "Egyptian General Authority", fn: CalculationMethod.Egyptian },
@@ -48,25 +50,42 @@ const PRAYER_LABELS = {
 // Deriving Y/M/D from the coordinates' own timezone instead makes the
 // result correct independent of the device's own clock settings.
 function todayAt(ianaZone) {
-  const parts = new Intl.DateTimeFormat("en-CA", {
+  const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: ianaZone,
     year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
+    month: "numeric",
+    day: "numeric",
   }).formatToParts(new Date());
-  const get = (type) => Number(parts.find((p) => p.type === type)?.value);
-  return new Date(get("year"), get("month") - 1, get("day"));
+
+  const get = (type) =>
+    Number(parts.find((p) => p.type === type)?.value);
+
+  return new Date(
+    get("year"),
+    get("month") - 1,
+    get("day")
+  );
 }
 
 export function usePrayerTimes(coords) {
-  const [methodId, setMethodId] = useLocalStorage("adhkar-calc-method", "MuslimWorldLeague");
-  const [madhab, setMadhab] = useLocalStorage("adhkar-madhab", "Shafi");
+  const [methodId, setMethodId] = useLocalStorage(
+    "adhkar-calc-method",
+    "MuslimWorldLeague"
+  );
+
+  const [madhab, setMadhab] = useLocalStorage(
+    "adhkar-madhab",
+    "Shafi"
+  );
+
   const [now, setNow] = useState(() => Date.now());
 
-  // Re-derive "now" every 30s so the countdown / current-prayer
-  // highlight stays live without a full re-render loop.
+  // Re-derive "now" every 30 seconds
   useEffect(() => {
-    const interval = setInterval(() => setNow(Date.now()), 30000);
+    const interval = setInterval(() => {
+      setNow(Date.now());
+    }, 30000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -74,43 +93,101 @@ export function usePrayerTimes(coords) {
     if (!coords) return null;
 
     let timezone;
+
     try {
       timezone = tzlookup(coords.latitude, coords.longitude);
     } catch {
-      // Falls back to the device's own timezone if the coordinates are
-      // somehow out of bounds for the lookup table (shouldn't normally
-      // happen with real geolocation results).
-      timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      timezone =
+        Intl.DateTimeFormat().resolvedOptions().timeZone;
     }
 
-    const coordinates = new Coordinates(coords.latitude, coords.longitude);
-    const params = (METHODS[methodId] || METHODS.MuslimWorldLeague).fn();
-    params.madhab = madhab === "Hanafi" ? Madhab.Hanafi : Madhab.Shafi;
+    const coordinates = new Coordinates(
+      coords.latitude,
+      coords.longitude
+    );
+
+    const params = (
+      METHODS[methodId] || METHODS.MuslimWorldLeague
+    ).fn();
+
+    params.madhab =
+      madhab === "Hanafi"
+        ? Madhab.Hanafi
+        : Madhab.Shafi;
 
     const date = todayAt(timezone);
-    const times = new PrayerTimes(coordinates, date, params);
+
+    // DON'T CHANGE THIS TIMES CALCULATION
+    const times = new PrayerTimes(
+      coordinates,
+      date,
+      params
+    );
+
     const qiblaDirection = Qibla(coordinates);
 
-    const order = ["fajr", "sunrise", "dhuhr", "asr", "maghrib", "isha"];
+    const order = [
+      "fajr",
+      "sunrise",
+      "dhuhr",
+      "asr",
+      "maghrib",
+      "isha",
+    ];
+
     const schedule = order.map((key) => ({
       key,
       label: PRAYER_LABELS[key],
       time: times[key],
     }));
 
-    const next = times.nextPrayer();
     const current = times.currentPrayer();
+
+    // Find the next prayer
+    let nextKey = null;
+    let nextTime = null;
+
+    const nowMs = Date.now();
+
+    for (const key of order) {
+      const prayerTime = times.timeForPrayer(key);
+
+      if (
+        prayerTime &&
+        prayerTime.getTime() > nowMs
+      ) {
+        nextKey = key;
+        nextTime = prayerTime;
+        break;
+      }
+    }
+
+    // If all today's prayers have passed,
+    // next prayer is tomorrow's Fajr.
+    if (!nextKey) {
+      nextKey = "fajr";
+
+      const tomorrow = new Date(date);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+
+      const tomorrowTimes = new PrayerTimes(
+        coordinates,
+        tomorrow,
+        params
+      );
+
+      nextTime = tomorrowTimes.fajr;
+    }
 
     return {
       timezone,
       schedule,
-      nextKey: next,
-      nextLabel: PRAYER_LABELS[next] || null,
-      nextTime: next && next !== "none" ? times.timeForPrayer(next) : null,
+      nextKey,
+      nextLabel: PRAYER_LABELS[nextKey] || null,
+      nextTime,
       currentKey: current,
       qiblaDirection,
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [coords, methodId, madhab, now]);
 
   return {
