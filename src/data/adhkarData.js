@@ -197,6 +197,14 @@ export const categories = [
     description: "Mercy and forgiveness for one's mother and father",
   },
   {
+  id: "deceased-parents",
+  icon: "🕊️",
+  name: "Duas for Deceased Parents",
+  nameAr: "أدعية للوالدين المتوفين",
+  description:
+    "Supplications asking Allah to forgive deceased parents, have mercy on them, and grant them peace and Jannah",
+},
+  {
     id: "children",
     icon: "🧒",
     name: "Children",
@@ -642,15 +650,38 @@ export const adhkarData = [
   ],
 },
 {
-   id: "morning-19",
-  category: "istighfar",
+  id: "morning-19",
+  category: "morning",
   arabic:
     "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ",
   translation:
     "I seek the forgiveness of Allah the Mighty, there is no god but Him, the Ever-Living, the Sustainer of all existence, and I turn to Him in repentance.",
   repeat: 100,
   reference: "Sunan Abi Dawud 1517, at-Tirmidhi 3577",
-  audioUrls: ["/audio/istighfar/istighfar-1.mp3"],
+  audioUrls: ["/audio/morning/morning-19.mp3"],
+},
+
+{
+  id: "morning-20",
+  category: "morning",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ",
+  translation:
+    "O Allah, I seek refuge in You from worry and grief, weakness and laziness, miserliness and cowardice, the burden of debt, and being overpowered by people.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari 6369",
+  audioUrls: ["/audio/morning/morning-20.mp3"],
+},
+{
+  id: "morning-21",
+  category: "morning",
+  arabic:
+    "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ، مِنْ شَرِّ مَا خَلَقَ وَبَرَأَ وَذَرَأَ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الْأَرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ وَالنَّهَارِ، وَمِنْ شَرِّ كُلِّ طَارِقٍ إِلَّا طَارِقًا يَطْرُقُ بِخَيْرٍ يَا رَحْمَنُ",
+  translation:
+    "I seek refuge in the perfect words of Allah, which no righteous or wicked person can go beyond, from the evil of what He has created, originated and spread, from the evil of what descends from the sky and what ascends into it, from the evil of what He has spread on the earth and what emerges from it, from the evil of the trials of night and day, and from the evil of every visitor at night, except one who comes with good, O Most Merciful.",
+  repeat: 1,
+  reference: "Reported in Musnad Ahmad",
+  audioUrls: ["/audio/morning/morning-21.mp3"],
 },
 
   // ============================================================
@@ -940,6 +971,29 @@ export const adhkarData = [
   repeat: 100,
   reference: "Sunan Abi Dawud 1517, at-Tirmidhi 3577",
   audioUrls: ["/audio/istighfar/istighfar-19.mp3"],
+
+},
+{
+  id: "evening-20",
+  category: "evening",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ",
+  translation:
+    "O Allah, I seek refuge in You from worry and grief, weakness and laziness, miserliness and cowardice, the burden of debt, and being overpowered by people.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari 6369",
+  audioUrls: ["/audio/evening/evening-20.mp3"],
+},
+{
+  id: "evening-21",
+  category: "evening",
+  arabic:
+    "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ الَّتِي لَا يُجَاوِزُهُنَّ بَرٌّ وَلَا فَاجِرٌ، مِنْ شَرِّ مَا خَلَقَ وَبَرَأَ وَذَرَأَ، وَمِنْ شَرِّ مَا يَنْزِلُ مِنَ السَّمَاءِ، وَمِنْ شَرِّ مَا يَعْرُجُ فِيهَا، وَمِنْ شَرِّ مَا ذَرَأَ فِي الْأَرْضِ، وَمِنْ شَرِّ مَا يَخْرُجُ مِنْهَا، وَمِنْ شَرِّ فِتَنِ اللَّيْلِ وَالنَّهَارِ، وَمِنْ شَرِّ كُلِّ طَارِقٍ إِلَّا طَارِقًا يَطْرُقُ بِخَيْرٍ يَا رَحْمَنُ",
+  translation:
+    "I seek refuge in the perfect words of Allah, which no righteous or wicked person can go beyond, from the evil of what He has created, originated and spread, from the evil of what descends from the sky and what ascends into it, from the evil of what He has spread on the earth and what emerges from it, from the evil of the trials of night and day, and from the evil of every visitor at night, except one who comes with good, O Most Merciful.",
+  repeat: 1,
+  reference: "Reported in Musnad Ahmad",
+  audioUrls: ["/audio/evening/evening-21.mp3"],
 },
   // ============================================================
   // BEFORE SLEEP
@@ -1962,6 +2016,71 @@ export const adhkarData = [
     "https://everyayah.com/data/Alafasy_128kbps/027019.mp3"
   ],
 },
+{
+  id: "parents-5",
+  category: "parents",
+  arabic:
+    "اللهم ثبت والديّ على دينك وطاعتك، واختم لهما بالصالحات.",
+  translation:
+    "O Allah, keep my parents firm upon Your religion and obedience to You, and grant them a good ending with righteous deeds.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},
+{
+  id: "parents-6",
+  category: "parents",
+  arabic:
+    "اللهم ألبسهما ثوب الصحة والعافية، وأطل في أعمارهما على طاعتك.",
+  translation:
+    "O Allah, clothe my parents in health and well-being, and prolong their lives in obedience to You.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},
+{
+  id: "parents-7",
+  category: "parents",
+  arabic:
+    "اللَّهُمَّ صُبَّ عَلَى وَالِدَيَّ الرِّزْقَ صَبًّا وَلَا تَجْعَلْ عَيْشَهُمَا كَدًّا",
+  translation:
+    "O Allah, pour abundant provision upon my parents and do not make their lives a hardship.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},
+{
+  id: "parents-8",
+  category: "parents",
+  arabic:
+    "اللَّهُمَّ اكْفِ وَالِدَيَّ بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِهِمَا بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+  translation:
+    "O Allah, suffice my parents with what You have made lawful instead of what You have made unlawful, and enrich them by Your فضل so that they need no one besides You.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},{
+  id: "parents-9",
+  category: "parents",
+  arabic:
+    "اللَّهُمَّ ارْزُقْهُمَا الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ",
+  translation:
+    "O Allah, grant my parents Paradise and whatever words or deeds bring them closer to it.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},
+{
+  id: "parents-10",
+  category: "parents",
+  arabic:
+    "اللَّهُمَّ اجْعَلْ أَوْقَاتَهُمَا بِذِكْرِكَ مَعْمُورَةً وَارْزُقْهُمَا رَاحَةَ الْبَالِ",
+  translation:
+    "O Allah, fill their time with Your remembrance and grant them peace of mind.",
+  repeat: 1,
+  reference: "Dua for Parents",
+  audioUrls: [],
+},
 // ============================================================
 // DUAS FOR DECEASED PARENTS
 // ============================================================
@@ -1989,6 +2108,95 @@ export const adhkarData = [
   repeat: 1,
   reference:
     "General supplication for deceased parents based on authentic supplications for the deceased.",
+},
+
+{
+  id: "deceased-parents-3",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ اغْسِلْهُمَا بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ وَنَقِّهِمَا مِنَ الْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الأَبْيَضُ مِنَ الدَّنَسِ",
+  translation:
+    "O Allah, wash them with water, snow, and hail, and cleanse them of their sins as a white garment is cleansed of stains.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari and Sahih Muslim",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-4",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ اجْعَلْ قَبْرَهُمَا رَوْضَةً مِنْ رِيَاضِ الْجَنَّةِ وَلَا تَجْعَلْهُ حُفْرَةً مِنْ حُفَرِ النِّيرَانِ",
+  translation:
+    "O Allah, make their grave a garden from the gardens of Paradise, and do not make it a pit from the pits of the Fire.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-5",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ نَوِّرْ لَهُمَا فِي قَبْرِهِمَا وَافْسَحْ لَهُمَا فِيهِ",
+  translation:
+    "O Allah, illuminate their graves for them and make their graves spacious.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-6",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ ارْفَعْ دَرَجَتَهُمَا فِي الْمَهْدِيِّينَ وَأَدْخِلْهُمَا الْجَنَّةَ بِغَيْرِ حِسَابٍ",
+  translation:
+    "O Allah, raise their rank among the guided, and admit them into Paradise without reckoning.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-6",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ اجْمَعْنِي بِهِمَا فِي جَنَّاتِ النَّعِيمِ",
+  translation:
+    "O Allah, reunite me with them in the Gardens of Bliss.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-7",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ يَمِّنْ كِتَابَهُمَا وَيَسِّرْ حِسَابَهُمَا وَثَقِّلْ بِالْحَسَنَاتِ مِيزَانَهُمَا",
+  translation:
+    "O Allah, place their records in their right hands, make their reckoning easy, and make their scales heavy with good deeds.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-8",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ اجْعَلْ عَمَلِي الصَّالِحَ وَدُعَائِي فِي مِيزَانِ حَسَنَاتِهِمَا",
+  translation:
+    "O Allah, place my righteous deeds and my supplications in the balance of their good deeds.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
+},
+{
+  id: "deceased-parents-9",
+  category: "deceased-parents",
+  arabic:
+    "اللَّهُمَّ أَمِنْهُمَا مِنْ فَزَعِ يَوْمِ الْقِيَامَةِ وَاجْعَلْهُمَا مِنَ الآمِنِينَ",
+  translation:
+    "O Allah, grant them safety from the terror of the Day of Resurrection and make them among those who are secure.",
+  repeat: 1,
+  reference: "Dua for Deceased Parents",
+  audioUrls: [],
 },
   // ============================================================
   // CHILDREN
@@ -2061,6 +2269,79 @@ export const adhkarData = [
     "https://everyayah.com/data/Alafasy_128kbps/002128.mp3",
   ],
 },
+{
+  id: "children-6",
+  category: "children",
+  arabic:
+    "اللَّهُمَّ اجْعَلْ أَوْلَادِي يُحِبُّونَ الْقُرْآنَ وَيَعْمَلُونَ بِهِ.",
+  translation:
+    "O Allah, make my children love the Quran and act according to it.",
+  repeat: 1,
+  reference: "Dua for Children",
+  audioUrls: [],
+},
+
+{
+  id: "children-7",
+  category: "children",
+  arabic: `
+اللهم إنك وهبت لي (أسماء البنات والأولاد)
+من غير حول مني ولا قوة，
+فاحفظهم بحفظك بلا حول مني ولا قوة.
+
+اللهم احفظهم من أي مكروه يصيبهم
+ومن كل شر وضرر،
+اللهم احفظهم من الأسقام والأمراض.
+
+اللهم لا تجعل ابتلائي فيهم،
+اللهم أجرهم من الفتن ما ظهر منها وما بطن.
+
+اللهم اجعلهم من صالح عبادك
+وحفظة كتابك،
+ومن أحسن الناس ديناً وعبادة وأخلاقاً،
+ومن أسعدهم حياة وأرغدهم عيشة.
+
+اللهم أغنهم بحلالك عن حرامك
+وبفضلك عمن سواك.
+
+رب كما حفظت كتابك إلى يوم الدين،
+احفظهم من الشيطان الرجيم.
+
+رب ارزقهم صحبة الأخيار
+وخصال الأطهار،
+والتوكل عليك يا قادر يا جبار.
+
+رب أبعد عنهم أمراض القلوب والأبدان،
+وبلّغني فيهم غاية أملي
+بحولك وقوتك يا كريم يا منان.
+
+رب متعني ببرهم في حياتي
+وأسعدني بدعائهم بعد مماتي.
+
+اللهم بارك لي في أولادي
+ووفقهم لطاعتك
+وارزقني برهم.
+
+اللهم يا معلم موسى وآدم علمهم،
+ويا مفهم سليمان فهمهم،
+ويا مؤتي لقمان الحكمة وفصل الخطاب
+آتهم الحكمة وفصل الخطاب.
+
+اللهم علمهم ما جهلوا
+وذكرهم ما نسوا،
+وافتح عليهم من بركات السماء والأرض
+إنك سميع مجيب الدعوات.
+
+وصلى اللهم وسلم وبارك
+على سيدنا محمد وآله الطيبين الطاهرين.
+`,
+  translation:
+    "O Allah, You have blessed me with children. Protect them by Your protection, keep them safe from every harm, illness and evil, protect them from trials, make them among Your righteous servants, bless their character, knowledge and faith, grant them righteous companionship, protect their hearts and bodies, and bless them with goodness and obedience to You. O Allah, bless my children and grant them wisdom, understanding and beneficial knowledge.",
+  repeat: 1,
+  reference: "Dua for Children",
+  audioUrls: [],
+},
+  
 // ============================================================
 // MARRIAGE
 // ============================================================
@@ -2499,7 +2780,8 @@ export const adhkarData = [
     "My Lord, grant me a righteous child.",
   repeat: 1,
   reference: "Qur'an 37:100 — the dua of Ibrahim (peace be upon him)",
-},// ============================================================
+},
+// ============================================================
 // DU'A FOR THE DECEASED AFTER BURIAL
 // ============================================================
 {
@@ -2543,8 +2825,36 @@ export const adhkarData = [
   repeat: 1,
   reference: "Sahih Muslim 975",
 },
-];
 
+{
+  id: "after-burial-5",
+category: "after-burial",
+  arabic: `
+اللهم اسق كل ميت
+تحت التراب غيثاً يروي منه ترابه
+وتغسل معه ذنوبه.
+
+اللهم إني ذكرتهم
+فارزقني بمن يذكرني
+حين تنقطع بي الأسباب.
+
+رحم الله أرواحاً
+لا تعوض ولا تولد مرة أخرى.
+
+اللهم اغفر لمن عشنا معهم
+أجمل السنين،
+وهزنا إليهم الحنين.
+
+اللهم اجمعنا بهم
+في جنتك.
+`,
+  translation:
+    "O Allah, send rain upon every deceased person beneath the earth, rain that refreshes their grave and washes away their sins. O Allah, I remember them, so grant me someone who remembers me when all means are cut off. May Allah have mercy on souls who cannot be replaced and will never return. O Allah, forgive those with whom we lived through our most beautiful years, and whom our hearts long for. O Allah, reunite us with them in Your Paradise.",
+  repeat: 1,
+  reference: "Dua for the Deceased",
+  audioUrls: [],
+},
+];
 // ============================================================
 // HELPER FUNCTIONS
 // ============================================================
