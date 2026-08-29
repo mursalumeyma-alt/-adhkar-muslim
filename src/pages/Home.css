@@ -1,3 +1,11 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -158,59 +166,137 @@
 }
 
 @media (max-width: 600px) {
+  /* =========================
+     MOBILE HOME PAGE
+     ========================= */
+
   .hero {
-    padding: 56px 20px 76px;
+    padding: 56px 16px 70px;
+    width: 100%;
+    box-sizing: border-box;
   }
-}
 
- 
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+  }
 
-.home-offline__content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  .hero__content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
 
-.home-offline__icon {
-  font-size: 2rem;
-}
+  .hero__sub-ar {
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
 
-.home-offline h2 {
-  margin: 0 0 0.35rem;
-}
+  .hero__desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
 
-.home-offline p {
-  margin: 0;
-}
+  .hero__cta {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
 
-.home-offline__button {
-  margin-top: 1rem;
-  padding: 0.75rem 1.2rem;
-  border: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-}
+  /* Tools */
+  .home-tools {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 25px auto 0;
+    padding: 0 16px 35px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 
-.home-offline__button:disabled {
-  cursor: not-allowed;
-  opacity: 0.7;
-}
+  .home-tools__card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 16px;
+  }
 
-.home-offline__progress {
-  height: 8px;
-  margin-top: 1rem;
-  overflow: hidden;
-  border-radius: 999px;
-  background: #e5e5e5;
-}
+  .home-tools__title {
+    font-size: 1rem;
+  }
 
-.home-offline__progress-bar {
-  height: 100%;
-  transition: width 0.2s ease;
-}
+  .home-tools__sub {
+    font-size: 0.75rem;
+  }
 
-.home-offline__success {
-  margin-top: 0.8rem !important;
-  font-size: 0.9rem;
+  /* Categories */
+  .home-categories {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 25px auto 0;
+    padding: 0 16px 40px;
+  }
+
+  .home-categories--top {
+    margin: -35px auto 0;
+    padding: 0 16px;
+  }
+
+  .home-categories__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .home-categories .star-divider {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 9px 18px;
+    text-align: center;
+    font-size: 0.72rem;
+  }
+
+  /* Offline Audio */
+  .home-offline {
+    width: auto;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 1.5rem 16px;
+    padding: 1.2rem;
+  }
+
+  .home-offline__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .home-offline__icon {
+    font-size: 1.8rem;
+  }
+
+  .home-offline h2 {
+    font-size: 1.2rem;
+  }
+
+  .home-offline p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .home-offline__button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Prevent horizontal overflow */
+  .hero,
+  .home-tools,
+  .home-categories,
+  .home-offline {
+    overflow-x: hidden;
+  }
 }
