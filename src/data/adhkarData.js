@@ -57,20 +57,7 @@ export const categories = [
     nameAr: "أذكار الاستيقاظ",
     description: "The first words upon opening your eyes",
   },
-  {
-    id: "before-salah",
-    icon: "🕋",
-    name: "Before Salah",
-    nameAr: "قبل الصلاة",
-    description: "The call to prayer and the opening of the prayer itself",
-  },
-  {
-    id: "prayer",
-    icon: "🙏",
-    name: "After Salah",
-    nameAr: "أذكار بعد الصلاة",
-    description: "Remembrances following the five daily prayers",
-  },
+
   {
     id: "eating-before",
     icon: "🍽️",
@@ -112,6 +99,20 @@ export const categories = [
     name: "Entering the Mosque",
     nameAr: "دخول المسجد",
     description: "Asking for the doors of mercy to open",
+  },
+   {
+  id: "before-salah",
+  icon: "🕌",
+  name: "Before Salah",
+  nameAr: "قبل الصلاة",
+  description: "The call to prayer and the opening of the prayer itself",
+},
+  {
+    id: "prayer",
+    icon: "🙏",
+    name: "After Salah",
+    nameAr: "أذكار بعد الصلاة",
+    description: "Remembrances following the five daily prayers",
   },
   {
     id: "mosque-leaving",
@@ -1585,95 +1586,6 @@ arabic:
   },
 
   // ============================================================
-  // BEFORE SALAH
-  // ============================================================
-  {
-  id: "before-salah-1",
-  category: "before-salah",
-  arabic:
-    "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلَاةِ الْقَائِمَةِ، آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
-  translation:
-    "O Allah, Lord of this perfect call and the established prayer, grant Muhammad the intercession and favor, and raise him to the praiseworthy station You have promised him.",
-  repeat: 1,
-  reference: "Sahih al-Bukhari 614 — said after hearing the adhan",
-  audioUrls: ["/audio/before-salah/before-salah-1.mp3"],
-},
-{
-  id: "before-salah-2",
-  category: "before-salah",
-  arabic:
-    "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-  translation:
-    "Our Lord, grant us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
-  repeat: 1,
-  reference:
-    "Qur'an 2:201 — a fitting dua in the window between the adhan and the iqamah, which the Prophet ﷺ said is not turned away (Sunan Abi Dawud 521, at-Tirmidhi 212)",
-  audioUrls: ["/audio/before-salah/before-salah-2.mp3"],
-},
-{
-  id: "before-salah-3",
-  category: "before-salah",
-  arabic:
-    "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-  translation:
-    "Glory is to You, O Allah, and praise is to You. Blessed is Your name, exalted is Your majesty, and there is no god besides You.",
-  repeat: 1,
-  reference:
-    "Sunan Abi Dawud 775, at-Tirmidhi 243 — the opening (istiftah) supplication of the prayer",
-  audioUrls: ["/audio/before-salah/before-salah-3.mp3"],
-},
-
-  // ============================================================
-  // AFTER SALAH
-  // ============================================================
- 
-  {
-  id: "prayer-1",
-  category: "prayer",
-  arabic:
-    "أَسْتَغْفِرُ اللَّهَ (٣ مرات) اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
-  translation:
-    "I seek Allah's forgiveness (3 times). O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of majesty and honor.",
-  repeat: 1,
-  reference: "Sahih Muslim 591",
-  audioUrls: ["/audio/prayer/prayer-1.mp3"],
-},
-
-  {
-  id: "prayer-2",
-  category: "prayer",
-  arabic:
-    "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
-  translation:
-    "There is no god but Allah alone, without partner. To Him belongs dominion and praise, and He is capable of all things. O Allah, none can withhold what You give, and none can give what You withhold, and the might of the mighty cannot benefit them against You.",
-  repeat: 1,
-  reference: "Sahih al-Bukhari 844, Sahih Muslim 593",
-  audioUrls: ["/audio/prayer/prayer-2.mp3"],
-},
- {
-  id: "prayer-3",
-  category: "prayer",
-  arabic:
-    "سُبْحَانَ اللَّهِ (٣٣) وَالْحَمْدُ لِلَّهِ (٣٣) وَاللَّهُ أَكْبَرُ (٣٣) ثُمَّ يَقُولُ تَمَامَ الْمِائَةِ: لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
-  translation:
-    "Glory is to Allah (33 times), Praise is to Allah (33 times), Allah is the Greatest (33 times), then to complete one hundred: there is no god but Allah alone, without partner.",
-  repeat: 1,
-  reference: "Sahih Muslim 597",
-  audioUrls: ["/audio/prayer/prayer-3.mp3"],
-},
- {
-  id: "prayer-4",
-  category: "prayer",
-  arabic:
-    "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
-  translation:
-    "O Allah, help me to remember You, to thank You, and to worship You in the best manner.",
-  repeat: 1,
-  reference: "Sunan Abi Dawud 1522",
-  audioUrls: ["/audio/prayer/prayer-4.mp3"],
-},
-
-  // ============================================================
   // BEFORE EATING
   // ============================================================
   
@@ -1795,6 +1707,110 @@ arabic:
   repeat: 1,
   reference: "Sunan Abi Dawud 465, Sahih Muslim 713",
   audioUrls: ["/audio/mosque-entering/mosque-entering-1.mp3"],
+},
+
+  // ============================================================
+  // BEFORE SALAH
+  // ============================================================
+  {
+  id: "before-salah-1",
+  category: "before-salah",
+  arabic:
+    "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلَاةِ الْقَائِمَةِ، آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
+  translation:
+    "O Allah, Lord of this perfect call and the established prayer, grant Muhammad the intercession and favor, and raise him to the praiseworthy station You have promised him.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari 614 — said after hearing the adhan",
+  audioUrls: ["/audio/before-salah/before-salah-1.mp3"],
+},
+{
+  id: "before-salah-2",
+  category: "before-salah",
+  arabic:
+    "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+  translation:
+    "Our Lord, grant us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
+  repeat: 1,
+  reference:
+    "Qur'an 2:201 — a fitting dua in the window between the adhan and the iqamah, which the Prophet ﷺ said is not turned away (Sunan Abi Dawud 521, at-Tirmidhi 212)",
+  audioUrls: ["/audio/before-salah/before-salah-2.mp3"],
+},
+{
+  id: "before-salah-3",
+  category: "before-salah",
+  arabic:
+    "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+  translation:
+    "Glory is to You, O Allah, and praise is to You. Blessed is Your name, exalted is Your majesty, and there is no god besides You.",
+  repeat: 1,
+  reference:
+    "Sunan Abi Dawud 775, at-Tirmidhi 243 — the opening (istiftah) supplication of the prayer",
+  audioUrls: ["/audio/before-salah/before-salah-3.mp3"],
+},
+
+  // ============================================================
+  // AFTER SALAH
+  // ============================================================
+ 
+  {
+  id: "prayer-1",
+  category: "prayer",
+  arabic:
+    "أَسْتَغْفِرُ اللَّهَ (٣ مرات) اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+  translation:
+    "I seek Allah's forgiveness (3 times). O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of majesty and honor.",
+  repeat: 1,
+  reference: "Sahih Muslim 591",
+  audioUrls: ["/audio/prayer/prayer-1.mp3"],
+},
+
+  {
+  id: "prayer-2",
+  category: "prayer",
+  arabic:
+    "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+  translation:
+    "There is no god but Allah alone, without partner. To Him belongs dominion and praise, and He is capable of all things. O Allah, none can withhold what You give, and none can give what You withhold, and the might of the mighty cannot benefit them against You.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari 844, Sahih Muslim 593",
+  audioUrls: ["/audio/prayer/prayer-2.mp3"],
+},
+ {
+  id: "prayer-3",
+  category: "prayer",
+  arabic:
+    "سُبْحَانَ اللَّهِ (٣٣) وَالْحَمْدُ لِلَّهِ (٣٣) وَاللَّهُ أَكْبَرُ (٣٣) ثُمَّ يَقُولُ تَمَامَ الْمِائَةِ: لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+  translation:
+    "Glory is to Allah (33 times), Praise is to Allah (33 times), Allah is the Greatest (33 times), then to complete one hundred: there is no god but Allah alone, without partner.",
+  repeat: 1,
+  reference: "Sahih Muslim 597",
+  audioUrls: ["/audio/prayer/prayer-3.mp3"],
+},
+ {
+  id: "prayer-4",
+  category: "prayer",
+  arabic:
+    "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+  translation:
+    "O Allah, help me to remember You, to thank You, and to worship You in the best manner.",
+  repeat: 1,
+  reference: "Sunan Abi Dawud 1522",
+  audioUrls: ["/audio/prayer/prayer-4.mp3"],
+},
+
+// ============================================================
+// MOSQUE-LEAVING
+// ============================================================
+{
+  id: "mosque-leaving-1",
+  category: "mosque-leaving",
+  arabic:
+    "بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+  translation:
+    "In the name of Allah. Peace and blessings be upon the Messenger of Allah. O Allah, I ask You for Your bounty.",
+  repeat: 1,
+  reference: "Sunan Abi Dawud 465",
+  audioUrls: ["/audio/mosque/mosque-leaving-1.mp3"],
 },
 // ============================================================
 // TRAVEL DUAS

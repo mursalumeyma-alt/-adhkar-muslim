@@ -5,7 +5,18 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   Home page background
+   ========================= */
+.home {
+  background: #4A4A46;
+  min-height: 100%;
+}
 
+.home-tools,
+.home-categories {
+  background: transparent;
+}
 .hero {
   position: relative;
   overflow: hidden;

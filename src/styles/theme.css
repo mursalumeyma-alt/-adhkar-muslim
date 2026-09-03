@@ -1,28 +1,30 @@
 /* ============================================================
    Design tokens — Islamic gold & ivory theme
    ============================================================ */
-
 :root {
   /* --- Light theme (default) --- */
-  --color-bg: #FBF7EE;
-  --color-bg-elevated: #FFFFFF;
-  --color-surface: #FFFDF8;
+
+  --color-bg: #D6D3C8;
+  --color-bg-elevated: #E1DED4;
+  --color-surface: #E8E5DC;
+
   --color-ink: #241F18;
   --color-ink-soft: #5B5245;
-  --color-ink-faint: #948A78;
+  --color-ink-faint: #716B60;
 
   --color-gold: #B8892B;
   --color-gold-deep: #916A1E;
   --color-gold-bright: #D8A94A;
-  --color-gold-tint: #F3E4C0;
+  --color-gold-tint: #D8D1BB;
+
   --color-emerald: #0E4F41;
-  --color-emerald-soft: #E4EEE9;
+  --color-emerald-soft: #CCDCD5;
 
-  --color-border: #E7DCC2;
-  --color-shadow: rgba(72, 55, 15, 0.10);
+  --color-border: #C2BEB2;
+  --color-shadow: rgba(40, 36, 25, 0.12);
 
-  --gradient-hero: linear-gradient(135deg, #0E4F41 0%, #14684F 45%, #B8892B 130%);
-  --gradient-gold: linear-gradient(120deg, #D8A94A, #B8892B);
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 420ms cubic-bezier(0.4, 0, 0.2, 1);
 
   --font-display: "Cormorant Garamond", "Amiri", serif;
   --font-arabic: "Amiri", "Scheherazade New", serif;
@@ -32,10 +34,8 @@
   --radius-md: 14px;
   --radius-lg: 22px;
   --radius-pill: 999px;
-
-  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 420ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+ 
 
 [data-theme="dark"] {
   --color-bg: #10120F;
@@ -69,7 +69,6 @@
 html,
 body,
 #root {
-  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }

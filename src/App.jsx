@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
 import { FavoritesProvider } from "./context/FavoritesContext";
@@ -18,6 +19,15 @@ import CalendarPage from "./pages/CalendarPage";
 import "./styles/theme.css";
 import "./App.css";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 export default function App() {
   return (
     <ThemeProvider>
@@ -30,6 +40,7 @@ export default function App() {
                   <div className="app-shell">
                     <Header />
                     <MotivationAlert />
+                    <ScrollToTop />
                     <main className="app-main">
                       <Routes>
                         <Route path="/" element={<Home />} />

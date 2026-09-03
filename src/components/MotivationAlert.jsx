@@ -51,14 +51,17 @@ export default function MotivationAlert() {
       };
     }
 
-    const quote = quoteOfTheDay();
-    return {
-      type: "quote",
-      icon: "✨",
-      arabic: quote.arabic,
-      text: quote.translation,
-      reference: quote.reference,
-    };
+   const content = useMemo(() => {
+  const quote = quoteOfTheDay();
+
+  return {
+    type: "quote",
+    icon: "✨",
+    arabic: quote.arabic,
+    text: quote.translation,
+    reference: quote.reference,
+  };
+}, []);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getCount]);
 
