@@ -1,164 +1,394 @@
+/* =========================================
+   DHIKR CARD
+========================================= */
 .dhikr-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: 0 2px 14px var(--color-shadow);
-  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 30px 22px;
+  box-sizing: border-box;
+  background: #d5e6df;
+  border: 1px solid #b9d0c7;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 70, 60, 0.10);
+  overflow: visible;
 }
 
-.dhikr-card:hover {
-  border-color: var(--color-gold);
-}
-
-.dhikr-card--done {
-  border-color: var(--color-emerald);
-  background: color-mix(in srgb, var(--color-emerald-soft) 55%, var(--color-surface));
-}
+/* =========================================
+   NUMBER
+========================================= */
 
 .dhikr-card__index {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  color: var(--color-gold);
-  opacity: 0.55;
-  font-weight: 600;
-  padding-top: 4px;
-  flex-shrink: 0;
+  align-self: flex-end;
+
+  margin-bottom: 8px;
+
+  color: #b8892b;
+
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
+/* =========================================
+   DHIKR CONTENT
+========================================= */
+
 .dhikr-card__body {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dhikr-card__arabic {
-  font-size: 1.55rem;
-  color: var(--color-ink);
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 28px 24px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.2;
+  color: #ffffff;
+  background: #064f48;
+  border-radius: 18px;
+  box-sizing: border-box;
 }
 
 .dhikr-card__translation {
-  font-size: 0.96rem;
-  line-height: 1.65;
-  color: var(--color-ink-soft);
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 18px;
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  background: #064f48;
+  border-radius: 18px;
+  box-sizing: border-box;
 }
 
+.dhikr-card > .counter {
+  width: 100%;
+  max-width: 360px;
+  margin: 28px auto 0;
+  padding: 10px;
+  background: #1f2925;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+/* =========================================
+   FOOTER
+========================================= */
+
 .dhikr-card__footer {
+  width: 100%;
+
+  padding-top: 14px;
+
+  border-top: 1px dashed #c9c4b7;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 12px;
-  flex-wrap: wrap;
-  padding-top: 8px;
-  border-top: 1px dashed var(--color-border);
 }
 
 .dhikr-card__reference {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.76rem;
-  color: var(--color-ink-faint);
-  font-style: italic;
+
+  color: #716b60;
+
+  font-size: 0.82rem;
 }
 
 .dhikr-card__track-indicator {
-  color: var(--color-gold-deep);
-  font-style: normal;
-  font-weight: 600;
+  color: #916a1e;
 }
+
+/* =========================================
+   TOOLS
+========================================= */
 
 .dhikr-card__tools {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
 .dhikr-card__tool-btn {
-  border: 1px solid var(--color-border);
-  background: transparent;
-  color: var(--color-ink-faint);
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all var(--transition-base);
+
+  border: 1px solid #c5c0b3;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #5b5245;
+
+  cursor: pointer;
+
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    transform 120ms ease;
 }
 
 .dhikr-card__tool-btn:hover {
-  border-color: var(--color-gold);
-  color: var(--color-gold-deep);
+  background: #d8d1bb;
+  color: #916a1e;
+}
+
+.dhikr-card__tool-btn:active {
+  transform: scale(0.94);
 }
 
 .dhikr-card__tool-btn--active {
-  color: var(--color-gold);
-  border-color: var(--color-gold);
-  background: var(--color-gold-tint);
+  background: #d8d1bb;
+  color: #916a1e;
 }
 
 .dhikr-card__tool-btn--error {
-  color: #B3452F;
-  border-color: #B3452F;
+  color: #a43c32;
 }
 
-.dhikr-card__spinner {
-  animation: spinSlow 0.9s linear infinite;
+/* =========================================
+   COUNTER
+========================================= */
+
+.dhikr-card > .counter {
+  width: 100%;
+  max-width: 300px;
+
+  margin: 18px auto 0;
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  background: #075b52;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
 }
 
-.dhikr-card__audio-notice {
+/* Count display */
+
+.dhikr-card > .counter .counter__display {
+  width: 100%;
+  min-height: 82px;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  background: #034a44;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.dhikr-card > .counter .counter__label {
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.dhikr-card > .counter .counter__number {
+  margin-top: 2px;
+
+  font-size: 2.1rem;
+  line-height: 1;
+
+  font-weight: 800;
+
+  color: #2ed4c6;
+}
+
+.dhikr-card > .counter .counter__target {
+  margin-top: 6px;
+
+  font-size: 0.72rem;
+
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* =========================================
+   PLUS
+========================================= */
+
+.dhikr-card > .counter .counter__plus {
+  width: 58px;
+  height: 58px;
+
+  margin-top: -24px;
+
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+
+  background: #2ed4c6;
+
+  color: #075b52;
+
+  font-size: 2rem;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  background: color-mix(in srgb, #B3452F 8%, var(--color-surface));
-  border: 1px solid color-mix(in srgb, #B3452F 30%, var(--color-border));
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  font-size: 0.78rem;
-  color: var(--color-ink-soft);
+  justify-content: center;
+
+  position: relative;
+  z-index: 3;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+
+  transition: transform 120ms ease;
 }
 
-.dhikr-card__audio-notice-actions {
-  display: flex;
+.dhikr-card > .counter .counter__plus:hover:not(:disabled) {
+  background: #42dfd1;
+}
+
+.dhikr-card > .counter .counter__plus:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+/* Completed */
+
+.dhikr-card > .counter .counter__plus--done {
+  background: #d8a94a;
+  color: #ffffff;
+
+  font-size: 1.8rem;
+}
+
+/* =========================================
+   MINUS + RESET
+========================================= */
+
+.dhikr-card > .counter .counter__actions {
+  width: 100%;
+
+  margin-top: 9px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
   gap: 8px;
-  flex-shrink: 0;
 }
 
-.dhikr-card__audio-notice-actions button {
-  border: 1px solid var(--color-border);
-  background: var(--color-bg-elevated);
-  color: var(--color-ink-soft);
-  font-size: 0.74rem;
-  padding: 5px 10px;
-  border-radius: var(--radius-pill);
-  white-space: nowrap;
-  transition: all var(--transition-base);
+.dhikr-card > .counter .counter__action {
+  min-height: 40px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #075b52;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  cursor: pointer;
 }
 
-.dhikr-card__audio-notice-actions button:hover {
-  border-color: var(--color-gold);
-  color: var(--color-gold-deep);
+.dhikr-card > .counter .counter__action:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
-@media (max-width: 640px) {
+.dhikr-card > .counter .counter__action-icon {
+  font-size: 1.05rem;
+}
+
+/* =========================================
+   AUDIO ERROR
+========================================= */
+
+.dhikr-card__audio-notice {
+  margin-top: 14px;
+  padding: 10px 12px;
+
+  border-radius: 10px;
+
+  background: #d8d1bb;
+  color: #5b5245;
+
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
   .dhikr-card {
+    padding: 20px 16px 18px;
+    border-radius: 18px;
+  }
+
+  .dhikr-card__arabic {
+  padding: 22px 16px;
+  font-size: 1.55rem;
+  line-height: 2;
+  color: #ffffff;
+  background: #064f48;
+  border-radius: 16px;
+}
+
+  .dhikr-card__translation {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .dhikr-card__footer {
     flex-direction: column;
-    gap: 14px;
-    padding: 18px;
+    align-items: flex-start;
   }
-  .dhikr-card__index {
-    display: none;
+
+  .dhikr-card__tools {
+    align-self: flex-end;
   }
-  .dhikr-card .counter {
-    align-self: center;
-    flex-direction: row;
-    gap: 14px;
+
+  .dhikr-card > .counter {
+    max-width: 280px;
+    margin-top: 15px;
+  }
+
+  .dhikr-card > .counter .counter__display {
+    min-height: 78px;
+  }
+
+  .dhikr-card > .counter .counter__number {
+    font-size: 2rem;
+  }
+
+  .dhikr-card > .counter .counter__plus {
+    width: 56px;
+    height: 56px;
+    margin-top: -23px;
   }
 }

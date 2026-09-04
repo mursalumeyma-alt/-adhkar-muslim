@@ -1,3 +1,18 @@
+.category-page {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  box-sizing: border-box;
+  background: #dfe8df;
+}
+
+.category-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 .category-card {
   position: relative;
   display: flex;

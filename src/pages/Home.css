@@ -9,8 +9,10 @@
    Home page background
    ========================= */
 .home {
-  background: #4A4A46;
-  min-height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: #064f48;
+  box-sizing: border-box;
 }
 
 .home-tools,
@@ -71,8 +73,8 @@
   align-items: center;
   gap: 8px;
   margin-top: 8px;
-  background: var(--gradient-gold);
-  color: #2B2314;
+ background: #e8e5dc;
+color: #064f48;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.05rem;

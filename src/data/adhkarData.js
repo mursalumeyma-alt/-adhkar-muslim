@@ -680,7 +680,7 @@ arabic:
     "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ",
   translation:
     "O Allah, I seek refuge in You from worry and grief, weakness and laziness, miserliness and cowardice, the burden of debt, and being overpowered by people.",
-  repeat: 1,
+  repeat: 3,
   reference: "Sahih al-Bukhari 6369",
   audioUrls: ["/audio/morning/morning-21.mp3"],
 },
