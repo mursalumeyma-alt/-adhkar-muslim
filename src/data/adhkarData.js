@@ -94,6 +94,13 @@ export const categories = [
     description: "Placing your trust in Allah before stepping out",
   },
   {
+    id: "friday",
+    icon: "🕌",
+    name: "Friday Adhkar",
+    nameAr: "أذكار يوم الجمعة",
+    description: "The blessed weekly practices of the believer's best day",
+  },
+  {
     id: "mosque-entering",
     icon: "🕌",
     name: "Entering the Mosque",
@@ -262,13 +269,7 @@ export const categories = [
     nameAr: "رمضان",
     description: "Breaking the fast and seeking the Night of Decree",
   },
-  {
-    id: "friday",
-    icon: "🕌",
-    name: "Friday Adhkar",
-    nameAr: "أذكار يوم الجمعة",
-    description: "The blessed weekly practices of the believer's best day",
-  },
+  
   {
     id: "general",
     icon: "✨",
@@ -1217,7 +1218,7 @@ arabic:
   audioUrls: [],
 },
 {
-  id: "deceased-parents-6",
+  id: "deceased-parents-7",
   category: "deceased-parents",
   arabic:
     "اللَّهُمَّ اجْمَعْنِي بِهِمَا فِي جَنَّاتِ النَّعِيمِ",
@@ -1228,7 +1229,7 @@ arabic:
   audioUrls: [],
 },
 {
-  id: "deceased-parents-7",
+  id: "deceased-parents-8",
   category: "deceased-parents",
   arabic:
     "اللَّهُمَّ يَمِّنْ كِتَابَهُمَا وَيَسِّرْ حِسَابَهُمَا وَثَقِّلْ بِالْحَسَنَاتِ مِيزَانَهُمَا",
@@ -1239,7 +1240,7 @@ arabic:
   audioUrls: [],
 },
 {
-  id: "deceased-parents-8",
+  id: "deceased-parents-9",
   category: "deceased-parents",
   arabic:
     "اللَّهُمَّ اجْعَلْ عَمَلِي الصَّالِحَ وَدُعَائِي فِي مِيزَانِ حَسَنَاتِهِمَا",
@@ -1250,7 +1251,7 @@ arabic:
   audioUrls: [],
 },
 {
-  id: "deceased-parents-9",
+  id: "deceased-parents-10",
   category: "deceased-parents",
   arabic:
     "اللَّهُمَّ أَمِنْهُمَا مِنْ فَزَعِ يَوْمِ الْقِيَامَةِ وَاجْعَلْهُمَا مِنَ الآمِنِينَ",
@@ -1694,6 +1695,194 @@ arabic:
   reference: "Sunan Abi Dawud 5096",
   audioUrls: ["/audio/home-entering/home-entering-2.mp3"],
 },
+ // ============================================================
+// Leaving the Home
+// ============================================================
+{
+  icon: "🚪",
+  name: "Leaving the Home",
+  nameAr: "الخروج من المنزل",
+  description: "Placing your trust in Allah before stepping out",
+
+  dua: {
+    arabic:
+      "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+
+    translation:
+      "In the name of Allah, I place my trust in Allah. There is no power and no strength except with Allah.",
+
+    reference: "Sunan Abi Dawud 5095; Jami` at-Tirmidhi 3426",
+
+    repeat: 1,
+  },
+},
+  // ============================================================
+  // FRIDAY ADHKAR
+  // ============================================================
+  {
+    id: "friday-1",
+    category: "friday",
+    arabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+    translation:
+      "O Allah, send blessings upon Muhammad and upon the family of Muhammad — the Prophet ﷺ encouraged sending abundant blessings upon him especially on Friday.",
+    repeat: 2000,
+    reference:
+      "Sunan Abi Dawud 1047 authentically establishes the general encouragement to increase salawat on Friday; the specific count of 2000 is a popular practice in many communities rather than a fixed number from a hadith text — recite as many times as is easy for you.",
+  },
+  {
+    id: "friday-2",
+    category: "friday",
+    arabic: "قِرَاءَةُ سُورَةِ الْكَهْفِ",
+    translation:
+      "Reciting Surah al-Kahf on Friday — whoever recites it will have light between the two Fridays, according to the hadith.",
+    repeat: 1,
+    reference: "Al-Hakim, al-Mustadrak 2/399, graded sahih by al-Albani",
+  },
+  {
+  id: "friday-3",
+  category: "friday",
+  arabic: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+  translation:
+    "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
+  repeat: 1,
+  reference: "Sahih al-Bukhari 6389; Sahih Muslim 2690",
+},
+{
+  id: "friday-4",
+  category: "friday",
+  arabic: "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+  translation:
+    "There is no deity except You. Glory be to You. Indeed, I have been among the wrongdoers.",
+  repeat: 1,
+  reference: "Sahih Muslim 1644",
+},
+{
+  id: "friday-5",
+  category: "friday",
+  arabic: "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَعَافِنِي، وَارْزُقْنِي",
+  translation:
+    "O Allah, forgive me, have mercy on me, grant me well-being, and provide for me.",
+  repeat: 1,
+  reference: "Sahih Muslim 2697",
+},
+{
+  id: "friday-6",
+  category: "friday",
+  arabic: "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ",
+  translation:
+    "O Allah, help me to remember You, to thank You, and to worship You well.",
+  repeat: 1,
+  reference: "Sunan Abi Dawud 1523; Sahih al-Nasa'i 1303",
+},
+{
+  id: "friday-7",
+  category: "friday",
+  arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+  translation:
+    "O Allah, I ask You for forgiveness and well-being in this world and the Hereafter.",
+  repeat: 1,
+  reference: "Jami` at-Tirmidhi 3558; Sunan Ibn Majah 3871",
+},
+{
+  id: "friday-8",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِيَ الَّتِي فِيهَا مَعَادِي",
+  translation:
+    "O Allah, set right for me my religion, which is the safeguard of my affairs; set right for me my worldly life, in which is my livelihood; and set right for me my Hereafter, to which is my return.",
+  repeat: 1,
+  reference: "Sahih Muslim 2720",
+},
+{
+  id: "friday-9",
+  category: "friday",
+  arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى، وَالتُّقَى، وَالْعَفَافَ، وَالْغِنَى",
+  translation:
+    "O Allah, I ask You for guidance, piety, chastity, and self-sufficiency.",
+  repeat: 1,
+  reference: "Sahih Muslim 2721",
+},
+{
+  id: "friday-10",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الْأَسْقَامِ",
+  translation:
+    "O Allah, I seek refuge in You from leprosy, insanity, elephantiasis, and from all evil diseases.",
+  repeat: 1,
+  reference: "Sunan Abi Dawud 1554",
+},
+{
+  id: "friday-11",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ يَوْمِ السُّوءِ، وَمِنْ لَيْلَةِ السُّوءِ، وَمِنْ سَاعَةِ السُّوءِ، وَمِنْ صَاحِبِ السُّوءِ، وَمِنْ جَارِ السُّوءِ فِي دَارِ الْمُقَامَةِ",
+  translation:
+    "O Allah, I seek refuge in You from an evil day, an evil night, an evil hour, an evil companion, and an evil neighbor in the place of permanent residence.",
+  repeat: 1,
+  reference: "Sunan an-Nasa'i 5501",
+},
+{
+  id: "friday-12",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفَشَلِ وَقِلَّةِ التَّوْفِيقِ، وَمِنَ التَّعَلُّقِ بِذُنُوبٍ تَجْلِبُ الْفَقْرَ وَتُسَبِّبُ الضِّيقَ، وَأَعُوذُ بِكَ مِنَ الْبُعْدِ عَنْكَ وَإِهْمَالِ طَاعَتِكَ، وَأَعُوذُ بِكَ يَا اللَّهُ مِنْ فَقْدَانِ الشَّغَفِ وَسَعْيٍ يَسْتَنْزِفُ الْجُهْدَ وَالْوَقْتَ بِلَا جَدْوَى، وَحَيَاةٍ بِلَا هَدَفٍ، وَأَعُوذُ بِكَ مِنْ طُولِ التَّمَنِّي وَحِرْمَانِ الْوُصُولِ، وَمِنَ الْعُسْرِ بَعْدَ الْيُسْرِ، اللَّهُمَّ يَسِّرْ أُمُورَنَا",
+  translation:
+    "O Allah, I seek refuge in You from failure and lack of success, from becoming attached to sins that bring poverty and cause hardship, from being distant from You and neglecting Your obedience, from losing passion and pursuing efforts that consume time and energy without benefit, and from a life without purpose. I seek refuge in You from prolonged wishing without attaining what is sought, and from hardship after ease. O Allah, make our affairs easy.",
+  repeat: 1,
+  reference: "General supplication; no specific hadith source provided",
+},
+{
+  id: "friday-13",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفَقْرِ، وَأَعُوذُ بِكَ مِنَ الْقِلَّةِ وَالذِّلَّةِ، وَأَعُوذُ بِكَ مِنْ أَنْ أَظْلِمَ أَوْ أُظْلَمَ",
+  translation:
+    "O Allah, I seek refuge in You from poverty, and I seek refuge in You from scarcity and humiliation, and I seek refuge in You from wronging others or being wronged.",
+  repeat: 1,
+  reference: "Sunan Abi Dawud 1544; Sunan an-Nasa'i 5463",
+},
+{
+  id: "friday-14",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنَ الْخَيْرِ كُلِّهِ، عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، وَأَعُوذُ بِكَ مِنَ الشَّرِّ كُلِّهِ، عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ خَيْرِ مَا سَأَلَكَ عَبْدُكَ وَنَبِيُّكَ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا عَاذَ بِهِ عَبْدُكَ وَنَبِيُّكَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَعُوذُ بِكَ مِنَ النَّارِ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَسْأَلُكَ أَنْ تَجْعَلَ كُلَّ قَضَاءٍ قَضَيْتَهُ لِي خَيْرًا",
+  translation:
+    "O Allah, I ask You for all good, immediate and later, what I know of it and what I do not know. I seek refuge in You from all evil, immediate and later, what I know of it and what I do not know. O Allah, I ask You for the best of what Your servant and Prophet asked You for, and I seek refuge in You from the evil from which Your servant and Prophet sought refuge. O Allah, I ask You for Paradise and whatever brings me closer to it in word or deed, and I seek refuge in You from the Fire and whatever brings me closer to it in word or deed. And I ask You to make every decree You have decreed for me good.",
+  repeat: 1,
+  reference: "Silsilat al-Ahadith as-Sahihah 1542",
+},
+{
+  id: "friday-15",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ إِنِّي أَسْأَلُكَ الثَّبَاتَ فِي الْأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُكَ شُكْرَ نِعْمَتِكَ، وَحُسْنَ عِبَادَتِكَ، وَأَسْأَلُكَ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُكَ لِمَا تَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ",
+  translation:
+    "O Allah, I ask You for steadfastness in the matter and determination upon guidance. I ask You to enable me to be grateful for Your blessing and to worship You well. I ask You for a sound heart and a truthful tongue. I ask You for the best of what You know, seek refuge in You from the evil of what You know, and seek Your forgiveness for what You know. Indeed, You are the Knower of the unseen.",
+  repeat: 1,
+  reference: "Silsilat al-Ahadith as-Sahihah 3228",
+},
+{
+  id: "friday-22",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ اقْسِمْ لَنَا مِنْ خَشْيَتِكَ مَا تَحُولُ بِهِ بَيْنَنَا وَبَيْنَ مَعَاصِيكَ، وَمِنْ طَاعَتِكَ مَا تُبَلِّغُنَا بِهِ جَنَّتَكَ، وَمِنَ الْيَقِينِ مَا تُهَوِّنُ بِهِ عَلَيْنَا مَصَائِبَ الدُّنْيَا، اللَّهُمَّ مَتِّعْنَا بِأَسْمَاعِنَا، وَأَبْصَارِنَا، وَقُوَّاتِنَا مَا أَحْيَيْتَنَا، وَاجْعَلْهُ الْوَارِثَ مِنَّا، وَاجْعَلْ ثَأْرَنَا عَلَى مَنْ ظَلَمَنَا، وَانْصُرْنَا عَلَى مَنْ عَادَانَا، وَلَا تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا، وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا مَبْلَغَ عِلْمِنَا، وَلَا تُسَلِّطْ عَلَيْنَا مَنْ لَا يَرْحَمُنَا",
+  translation:
+    "O Allah, grant us such fear of You that it prevents us from disobeying You, such obedience to You that brings us to Your Paradise, and such certainty that makes the calamities of this world easy for us. O Allah, grant us benefit from our hearing, our sight, and our strength as long as You keep us alive, make them our inheritance, grant us victory over those who wrong us, help us against those who oppose us, do not make our affliction fall upon our religion, do not make this world our greatest concern or the extent of our knowledge, and do not give authority over us to those who do not have mercy on us.",
+  repeat: 1,
+  reference: "Jami` at-Tirmidhi 3502",
+},
+{
+  id: "friday-23",
+  category: "friday",
+  arabic:
+    "اللَّهُمَّ احْفَظْنِي بِالإِسْلَامِ قَائِمًا، وَاحْفَظْنِي بِالإِسْلَامِ قَاعِدًا، وَاحْفَظْنِي بِالإِسْلَامِ رَاقِدًا، وَلَا تُشْمِتْ بِي عَدُوًّا حَاسِدًا، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ كُلِّ خَيْرٍ خَزَائِنُهُ بِيَدِكَ، وَأَعُوذُ بِكَ مِنْ كُلِّ شَرٍّ خَزَائِنُهُ بِيَدِكَ",
+  translation:
+    "O Allah, preserve me through Islam while I am standing, preserve me through Islam while I am sitting, and preserve me through Islam while I am lying down. Do not let an envious enemy rejoice over my misfortune. O Allah, I ask You for every good whose treasures are in Your hand, and I seek refuge in You from every evil whose treasures are in Your hand.",
+  repeat: 1,
+  reference: "Al-Adab al-Mufrad 701",
+},
+
 // ============================================================
 // ENTERING THE MOSQUE
 // ============================================================
@@ -2921,28 +3110,7 @@ arabic:
   audioUrls: [],
 },
 
-  // ============================================================
-  // FRIDAY ADHKAR
-  // ============================================================
-  {
-    id: "friday-1",
-    category: "friday",
-    arabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
-    translation:
-      "O Allah, send blessings upon Muhammad and upon the family of Muhammad — the Prophet ﷺ encouraged sending abundant blessings upon him especially on Friday.",
-    repeat: 2000,
-    reference:
-      "Sunan Abi Dawud 1047 authentically establishes the general encouragement to increase salawat on Friday; the specific count of 2000 is a popular practice in many communities rather than a fixed number from a hadith text — recite as many times as is easy for you.",
-  },
-  {
-    id: "friday-2",
-    category: "friday",
-    arabic: "قِرَاءَةُ سُورَةِ الْكَهْفِ",
-    translation:
-      "Reciting Surah al-Kahf on Friday — whoever recites it will have light between the two Fridays, according to the hadith.",
-    repeat: 1,
-    reference: "Al-Hakim, al-Mustadrak 2/399, graded sahih by al-Albani",
-  },
+
 
   // ============================================================
 // GENERAL DUAS
