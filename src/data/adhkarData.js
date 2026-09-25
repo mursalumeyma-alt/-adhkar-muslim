@@ -1695,24 +1695,23 @@ arabic:
   reference: "Sunan Abi Dawud 5096",
   audioUrls: ["/audio/home-entering/home-entering-2.mp3"],
 },
- // ============================================================
+
+// ============================================================
 // Leaving the Home
 // ============================================================
 {
+  id: "home-leaving",
+  category: "home",
   icon: "🚪",
   name: "Leaving the Home",
   nameAr: "الخروج من المنزل",
   description: "Placing your trust in Allah before stepping out",
-
   dua: {
     arabic:
       "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
-
     translation:
       "In the name of Allah, I place my trust in Allah. There is no power and no strength except with Allah.",
-
     reference: "Sunan Abi Dawud 5095; Jami` at-Tirmidhi 3426",
-
     repeat: 1,
   },
 },
